@@ -1,0 +1,57 @@
+body {
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lightgrey;
+    width: 280px;
+    height: 330px;
+    box-sizing: border-box;
+    border: 4px outset;
+}
+
+.container_header {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0 5px 0px;
+    padding: 5px 2px 5px 2px;
+    box-sizing: border-box;
+    border: 4px inset;
+}
+
+.container_header_counter {
+    display: flex;
+    margin-right: 75px;
+}
+
+.container_header_smiley-Btn {
+    background: url('sprites/minesweeper-sprites_smiley.jpg');
+    height: 26px;
+    width: 26px;
+    border: none;
+}
+
+.container_header_timer {
+    display: flex;
+    margin-left: 75px;
+}
+
+.container_minefield {
+    display: grid;
+    grid-template-columns: repeat(16, 16px);
+    margin: -3px 0 5px 0px;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    border: 2px inset;
+}
+
+.container_minefield button {
+    height: 16px;
+    width: 16px;
+    border: none;
+    background: url('sprites/minesweeper-sprites_cell.jpg');
+}
