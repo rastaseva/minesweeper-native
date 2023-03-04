@@ -137,9 +137,14 @@ function startMinesweeper(width, height, bombQuantity) {
 
 
         if (bombCheck(row, column)) {
-            for (let bomb of bombs) {
-                if (cells[bomb].style.background !== 'url("sprites/minesweeper-sprites_mine(defused).jpg")') {
-                    cells[bomb].style.background = "url('sprites/minesweeper-sprites_bomb(shown).jpg')";
+            for (let cell in cells) {
+                for (let bomb of bombs) {
+                    if (cells[bomb] !== cells[cell] && cells[cell].style.background === 'url("sprites/minesweeper-sprites_mine(question).jpg")') {
+                        cells[cell].style.background = 'url("sprites/minesweeper-sprites_bomb(false).jpg")';
+                    }
+                    if (cells[bomb].style.background !== 'url("sprites/minesweeper-sprites_mine(defused).jpg")') {
+                        cells[bomb].style.background = "url('sprites/minesweeper-sprites_bomb(shown).jpg')";
+                    }
                 }
 
             }
