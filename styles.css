@@ -25,7 +25,7 @@ body {
 
 .container_header_counter {
     display: flex;
-    margin-right: 75px;
+    margin-right: 73px;
 }
 
 .container_header_smiley-Btn {
@@ -37,7 +37,7 @@ body {
 
 .container_header_timer {
     display: flex;
-    margin-left: 75px;
+    margin-left: 73px;
 }
 
 .container_minefield {
