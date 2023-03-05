@@ -55,3 +55,23 @@ body {
     border: none;
     background: url('sprites/minesweeper-sprites_cell.jpg');
 }
+
+.container_rules {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_rules h2 {
+    margin: auto;
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+
+.container_rules h3 {
+    margin: auto;
+}
+
+.container_rules p {
+    margin: 5px;
+    font-size: 0.7em;
+}
